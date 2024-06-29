@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden; /* Prevent scrollbar when card is hidden */
+        }
+        .myProjects {
+            margin: 20px;
+        }
+        .myProjectHeadingSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .createProjectButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .projectCards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .project {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .project-heading {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .projectDescription {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .projectMoreBtn {
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .container {
+            position: relative;
+        }
+        .card {
+            position: fixed;
+            top: 0;
+            right: -300px; /* Initially hidden outside of the screen */
+            width: 300px;
+            height: 100%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: right 0.5s;
+            display: none; /* Hidden by default */
+        }
+        .card.show {
+            display: block; /* Show card when needed */
+            right: 0;
+        }
+        .buttonGroup button, .formGroup button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .formGroup {
+            display: none;
+            margin: 10px 0;
+        }
+        .formGroup input,
+        .formGroup textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .teamCode {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            text-align: center;
+        }
+        .closeBtn {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+            width: 100px;
+            margin: 10px 0;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="myProjects">
+        <div class="myProjectHeadingSection">
+            <h1 class="myProjectHeading">My Projects</h1>
+            <button class="createProjectButton">Create</button> <!-- Create button added here -->
+        </div>
+        <div class="projectCards">
+            <div class="project">
+                <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
+                <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track medication usage, receive reminders, and communicate with healthcare providers. The App will integrate with electronic health records (EHRs) and use advanced analytics and machine learning algorithms to provide personalized recommendations to patients.</p>
+                <button class="projectMoreBtn">More</button>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="closeBtn" id="closeCardBtn">Close</div>
+        <div class="buttonGroup">
+            <button id="joinProjectBtn">Join Project</button>
+            <button id="createTeamBtn">Create Project</button>
+        </div>
+        <div class="formGroup" id="createProjectForm">
+            <input type="text" id="projectTitle" placeholder="Project Title">
+            <textarea id="materialsNeeded" placeholder="Materials Needed"></textarea>
+            <textarea id="description" placeholder="Description"></textarea>
+            <button id="createBtn">Create</button>
+            <div class="closeBtn" id="closeCreateFormBtn">Close</div>
+        </div>
+        <div class="formGroup" id="joinProjectForm">
+            <input type="text" id="teamCodeInput" placeholder="Enter Team Code">
+            <div class="closeBtn" id="closeJoinFormBtn">Close</div>
+        </div>
+        <div class="teamCode" id="teamCodeDisplay">
+            Your team code: <span id="generatedCode"></span>
+            <div class="closeBtn" id="closeCodeDisplayBtn">Close</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.createProjectButton').addEventListener('click', function() {
+        const card = document.querySelector('.card');
+        card.style.display = 'block';  // Ensure the card is visible
+        setTimeout(() => {
+            card.classList.add('show');  // Trigger the slide-in effect
+        }, 10);  // Small delay to ensure the transition works
+    });
+
+    document.getElementById('closeCardBtn').addEventListener('click', function() {
+        const card = document.querySelector('.card');
+        card.classList.remove('show');  // Trigger the slide-out effect
+        setTimeout(() => {
+            card.style.display = 'none';  // Hide the card after the slide-out effect
+        }, 500);  // Match the transition duration
+    });
+
+    document.getElementById('createTeamBtn').addEventListener('click', function() {
+        document.getElementById('createProjectForm').style.display = 'block';
+        document.getElementById('joinProjectForm').style.display = 'none';
+        document.getElementById('teamCodeDisplay').style.display = 'none';
+    });
+
+    document.getElementById('joinProjectBtn').addEventListener('click', function() {
+        document.getElementById('joinProjectForm').style.display = 'block';
+        document.getElementById('createProjectForm').style.display = 'none';
+        document.getElementById('teamCodeDisplay').style.display = 'none';
+    });
+
+    document.getElementById('createBtn').addEventListener('click', function() {
+        const teamCode = 'TEAM' + Math.floor(Math.random() * 10000);
+        document.getElementById('generatedCode').innerText = teamCode;
+        document.getElementById('teamCodeDisplay').style.display = 'block';
+        document.getElementById('createProjectForm').style.display = 'none';
+    });
+
+    document.getElementById('closeCreateFormBtn').addEventListener('click', function() {
+        document.getElementById('createProjectForm').style.display = 'none';
+    });
+
+    document.getElementById('closeJoinFormBtn').addEventListener('click', function() {
+        document.getElementById('joinProjectForm').style.display = 'none';
+    });
+
+    document.getElementById('closeCodeDisplayBtn').addEventListener('click', function() {
+        document.getElementById('teamCodeDisplay').style.display = 'none';
+    });
+</script>
+
+</body>
+</html>

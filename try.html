@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Popup</title>
+    <style>
+        .cardm {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 46.64%;
+  left: 50%;
+}
+
+.card {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
+  background: whitesmoke;
+  color: black;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+.weather {
+  position: relative;
+  margin: 1em;
+}
+
+.main {
+  font-size: 2em;
+  position: relative;
+  left: 1.5em;
+  top: 2.5em;
+}
+
+.mainsub {
+  position: relative;
+  top: 2.5em;
+  left: 5em;
+  font-size: 0.6em;
+}
+
+.card2 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  height: 2px;
+  border-radius: 25px;
+  background: #788686;
+  z-index: 0;
+  top: 1em;
+  transition: .1s ease-in-out;
+}
+
+.card:hover {
+  background-color: #FFE87C;
+  cursor: pointer;
+}
+
+.card:hover + .card2 {
+  height: 300px;
+  margin-top: 20px;
+  top: 2em;
+}
+
+.card:hover + .card2 .name{
+  color: black;
+  display: block;
+  margin-top: 50px;
+  transition: .4s ease-in-out;
+}
+
+.card:hover + .card2 .lower{
+  top: 30.2em;
+}
+
+.name{
+  display: none;
+  transition: .4s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <div class="try">
+        <div class="cardm">
+            <div class="card">
+            
+            <div class="main">Project Title</div>
+            <div class="mainsub">Project start/end</div>
+        
+            </div>
+        
+            <div class="card2">
+              <div>
+
+              </div>
+              <p class="name">Notice Board
+ 
+                Tomorrow is a Holiday!
+                Hello, Let us make a promise that we would not let the hard sacrifices of our brave freedom fighters go in vain. We would word hard to make our country the best in the world. Happy Republic Day 2021!
+                
+                Teja Vardhan
+                
+                June 13th, 2024 • 10:30 AM</p>
+              <p class="name">teja</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

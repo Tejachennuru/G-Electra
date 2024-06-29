@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>G-Electra</title>
+</head>
+<body>
+    <div class="home-section">
+        <nav class="navbar fixed-top">
+            <div class="logo-section">
+                <img class="logo" src="G-ELECTRA Logo.png"/>
+                <h1 class="logo-text">G-ELECTRA &#10008;</h1>
+                <img class="logo" src="Gitam logo.png"/>
+                <h1 class="logo-text">GITAM</h1>
+
+            </div>
+            <div class="nav-items ">
+                <a href="#" class="nav-item-lg">Features</a>
+                <a href="#" class="nav-item-lg">About</a>
+                <a href="#" class="nav-item-lg">Contacts</a>
+                <div class="nav-item">
+                    <img src="profile-img.webp" class="profile-img" >
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" id="menu-icon" class="bi bi-list menu-icon " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </nav>
+        <div id="menu" class="menu-sm">
+            <div class="nav-item-sm">
+                <p class="nav-item">Core Team</p>
+            </div>
+            <div class="nav-item-sm">
+                <p class="nav-item">About</p>
+            </div>
+            <div class="nav-item-sm">
+                <p class="nav-item">Contacts</p>
+            </div>
+        </div>
+
+
+        <div class="home-body">
+
+            <div class="sidebar">
+                <div class="noticeBoard ">
+                    <div class="heading-content-binding">
+                        <div class="notice-heading-box">
+                            <h1 class="notice-heading">Notice Board</h1>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="notice-content">
+                            <div>
+                                <h1 id="notice-heading" class="notice-content-heading">Tomorrow is a Holiday!</h1>
+                                <p id="notice-description" class="notice-content-text">Hello, Let us make a promise that we would not let the hard sacrifices of our brave freedom fighters go in vain. We would word hard to make our country the best in the world. Happy Republic Day 2021! </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="admin-details">
+                        <div>
+                            <p class="notice-givenby-name">Teja Vardhan</p>
+                            <p id="notice_date" class="notice-date">June 13th, 2024 &#x2022; <span> 10:30 AM</span></p>
+                        </div>
+
+                        <div onclick="showForm()" tabindex="0" class="plusButton">
+                            <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                              <g mask="url(#mask0_21_345)">
+                                <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+                              </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="coreTeam ">
+                    <div>
+                        <h1 class="coreTeam-Heading">Core Team</h1>
+                    </div>
+                    <div class="team-members">
+                        <div class="member-card">
+                            <img src="professor-img.webp" class="member-img" >
+                            <div class="member-details">
+                                <p class="member-name">Sanjhanna</p>
+                                <p class="members-mail-role">Web member</p>
+                                <p class="members-mail-role">sbethi@gitam.in</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="team-members">
+                        <div class="member-card">
+                            <img src="profile-img.webp" class="member-img" >
+                            <div class="member-details">
+                                <p class="member-name">Akash</p>
+                                <p class="members-mail-role">Web member</p>
+                                <p class="members-mail-role">amathi@gitam.in</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="team-members">
+                        <div class="member-card">
+                            <img src="professor-img.webp" class="member-img" >
+                            <div class="member-details">
+                                <p class="member-name">Harshith</p>
+                                <p class="members-mail-role">Web member</p>
+                                <p class="members-mail-role">harshith@gitam.in</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="team-members">
+                        <div class="member-card">
+                            <img src="profile-img.webp" class="member-img" >
+                            <div class="member-details">
+                                <p class="member-name">Sampreeth</p>
+                                <p class="members-mail-role">Web member</p>
+                                <p class="members-mail-role">sampreeth@gitam.in</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="more-option">
+                        <button class="Btn">
+  
+                            <div class="sign"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                              </svg></div>
+                            
+                            <div class="text">More</div>
+                          </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-Content">
+                <div class="myProjects">
+                    <div class="myProjectHeadingSection">
+                        <h1 class="myProjectHeading">My Projects</h1>
+                        <button class="createProjectButton">
+                            <span class="hover-underline-animation">New Project</span>
+                            <svg
+                              id="arrow-horizontal"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="30"
+                              height="10"
+                              viewBox="0 0 46 16"
+                            >
+                              
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="projectCards">
+                        <div class="project">
+                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
+                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
+                            <div class="projectCardBtns">
+                                <div class="projectPendingBtn">Pending</div>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
+                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
+                            <div class="projectCardBtns">
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
+                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
+                            <div class="projectCardBtns">
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
+                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
+                            <div class="projectCardBtns">
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
+                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
+                            <div class="projectCardBtns">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="closeBtn" id="closeCardBtn">Close</div>
+                    <div class="buttonGroup">
+                        <button id="joinProjectBtn">Join Project</button>
+                        <button id="createTeamBtn">Create Project</button>
+                    </div>
+                    <div class="formGroup" id="createProjectForm">
+                        <input type="text" id="projectTitle" placeholder="Project Title">
+                        <textarea id="materialsNeeded" placeholder="Materials Needed"></textarea>
+                        <textarea id="description" placeholder="Description"></textarea>
+                        <button id="createBtn">Create</button>
+                        <div class="closeBtn" id="closeCreateFormBtn">Close</div>
+                    </div>
+                    <div class="formGroup" id="joinProjectForm">
+                        <input type="text" id="teamCodeInput" placeholder="Enter Team Code">
+                        <div class="closeBtn" id="closeJoinFormBtn">Close</div>
+                    </div>
+                    <div class="teamCode" id="teamCodeDisplay">
+                        Your team code: <span id="generatedCode"></span>
+                        <div class="closeBtn" id="closeCodeDisplayBtn">Close</div>
+                    </div>
+                </div>
+
+
+
+                <div id="formContainer">
+                    <h2>Form Heading</h2>
+                    <input type="text" id="notice_form_heading" placeholder="Enter heading">
+                    <textarea id="notice_form_description" placeholder="Enter description (max 200 characters)" rows="4" cols="50" maxlength="200"></textarea>
+                    <button id="notice_add_btn" onclick="addForm()">Add</button>
+                    <button id="closeButton" onclick="closeForm()">Close</button>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+
+
+    <script src="home.js"></script>
+</body>
+</html>
