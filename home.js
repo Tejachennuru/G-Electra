@@ -4,6 +4,33 @@ document.getElementById("menu-icon").addEventListener('click', function(event) {
 });
 
 
+
+
+
+/* Upload Profile */
+
+function showUploadOption() {
+    document.getElementById('file-input').click();
+}
+
+function uploadProfilePhoto() {
+    const fileInput = document.getElementById('file-input');
+    const profileIcon = document.getElementById('profile-icon');
+
+    if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            profileIcon.src = e.target.result;
+        }
+
+        reader.readAsDataURL(fileInput.files[0]);
+    }
+}
+
+
+
+
 function showForm() {
     document.getElementById('formContainer').style.display = 'block';
 }

@@ -100,20 +100,6 @@ body {
     margin-top: 10px;
 }
 
-
-.profile-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-#file-input {
-  display: none;
-}
-
-
 .profile-img{
     height: 50px;
     width: 50px;
@@ -490,212 +476,48 @@ Entry Form
 }
 
 
-.project-heading{
-  font-size: 16px;
-  text-align: center;
-}
-
-.myProjects{
-  width: 100%;
-  padding: 10px;
-}
-
-.myProjectHeadingSection{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.myProjectHeading{
-  font-size: 26px;
-  margin-top: 10px;
-}
-
-
-
-
-/*  Create Button CSS */
-
-.createProject{
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.createProjectButton {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.createProjectButton span {
-  padding-bottom: 7px;
-  letter-spacing: 4px;
-  font-size: 14px;
-  padding-right: 15px;
-  text-transform: uppercase;
-}
-
-.createProjectButton svg {
-  transform: translateX(-8px);
-  transition: all 0.3s ease;
-}
-
-.createProjectButton:hover svg {
-  transform: translateX(0);
-}
-
-.createProjectButton:active svg {
-  transform: scale(0.9);
-}
-
-.hover-underline-animation {
-  position: relative;
-  color: black;
-  padding-bottom: 20px;
-}
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.createProjectButton:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
-
-/* button up   */
-
-
-.card {
-  position: absolute;
-  top: 4em;
-  right: -500px; /* Initially hidden outside of the screen */
-  width: 300px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: right 0.5s;
-  display: none; /* Hidden by default */
-}
-.card.show {
-  display: block; /* Show card when needed */
-  right: 0;
-}
-.buttonGroup button, .formGroup button {
-  margin: 10px 0;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-}
-.formGroup {
-  display: none;
-  margin: 10px 0;
-}
-.formGroup input,
-.formGroup textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
-}
-.teamCode {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #e0e0e0;
-  text-align: center;
-}
-.closeBtn {
-  background-color: red;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  cursor: pointer;
-  width: 100px;
-  margin: 10px 0;
-  align-self: center;
-}
-
-
-
-
-
-
-
-
-
-
-.projectCards{
-  height: 250px;
-  width: 100%;
-  display: flex;
-  padding: 10px;
-  overflow-x: auto;
-}
-
-.project{
-  width: 250px;
-  height: 200px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  cursor: pointer;
-  background-color: #e1e1e1;
-  border-width: 25px;
-  border-color: transparent;
-  border-top: #40ba93;
-  border-style: solid;
-  margin: 10px;
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: 0.4s;
-}
-
-.project:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
-  background-color: #ffffff;
-}
-
-.projectDescription{
-  font-size: 12px;
-}
-
-.projectCardBtns{
-  display: flex;
-}
-
-
-
-.projectPendingBtn{
-  color: #ffffff;
-  font-size: 14px;
-  height: 25px;
-  width: 80px;
-  text-align: center;
-  border-radius: 0.5em;
-  background: #f02929;
-  cursor: pointer;
-  border: 0px solid #e8e8e8;
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #d2d1d1;
-}
-
-
 /* Main content section */
 
+
+
+/* back button */
+
+.back_button {
+    display: flex;
+    margin: 15px;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    color: #060708;
+    background: #fff;
+    text-decoration: none;
+   }
+   
+   .back_button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+    text-decoration: none;
+   }
+   
+   .back_button:hover > svg {
+    font-size: 1.2em;
+    text-decoration: none;
+    transform: translateX(-5px);
+   }
+   
+   .back_button:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+   }
 
 
 

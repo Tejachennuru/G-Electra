@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="project_info.css">
     <title>G-Electra</title>
 </head>
 <body>
@@ -24,10 +24,7 @@
                 <a href="#" class="nav-item-lg">About</a>
                 <a href="#" class="nav-item-lg">Contacts</a>
                 <div class="nav-item">
-                    <div class="profile-container">
-                        <img class="profile-img" id="profile-icon" src="Vijaydevarakonda.jpg" alt="Profile Icon" onclick="showUploadOption()">
-                        <input type="file" id="file-input" accept="image/*" onchange="uploadProfilePhoto()">
-                    </div>
+                    <img src="profile-img.webp" class="profile-img" >
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" id="menu-icon" class="bi bi-list menu-icon " viewBox="0 0 16 16">
@@ -153,104 +150,15 @@
             </div>
 
             <div class="home-Content">
-                <div class="myProjects">
-                    <div class="myProjectHeadingSection">
-                        <h1 class="myProjectHeading">My Projects</h1>
-                        <button class="createProjectButton">
-                            <span class="hover-underline-animation">New Project</span>
-                            
-                        </button>
-                    </div>
-                    <div id="myprojectcards" class="projectCards">
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                                <div class="projectPendingBtn">Pending</div>
-                            </div>
-                        </div>
 
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                            </div>
-                        </div>
+                <button class="back_button">
+                <a href="home.html">
+                    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+                    <span>Back</span>
+                </a>
+                </button>
 
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="myProjects">
-                    <div class="myProjectHeadingSection">
-                        <h1 class="myProjectHeading">Projects</h1>
-                    </div>
-                    <div class="projectCards">
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                                <div class="projectPendingBtn">Pending</div>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <h1 class="project-heading">Multi-Language Voice Control IOT Home Automation</h1>
-                            <p class="projectDescription">This project aims to develop a mobile health application (App) for chronic disease management that will enable patients to monitor their health condition, track the medication usage, receive reminders</p>
-                            <div class="projectCardBtns">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="closeBtn" id="closeCardBtn">Close</div>
-                    <div class="buttonGroup">
-                        <button id="joinProjectBtn">Join Project</button>
-                        <button id="createTeamBtn">Create Project</button>
-                    </div>
-                    <div class="formGroup" id="createProjectForm">
-                        <input type="text" id="projectTitle" placeholder="Project Title">
-                        <textarea id="materialsNeeded" placeholder="Materials Needed"></textarea>
-                        <textarea id="description" placeholder="Description"></textarea>
-                        <button id="createBtn">Create</button>
-                        <div class="closeBtn" id="closeCreateFormBtn">Close</div>
-                    </div>
-                    <div class="formGroup" id="joinProjectForm">
-                        <input type="text" id="teamCodeInput" placeholder="Enter Team Code">
-                        <div class="closeBtn" id="closeJoinFormBtn">Close</div>
-                    </div>
-                    <div class="teamCode" id="teamCodeDisplay">
-                        Your team code: <span id="generatedCode"></span>
-                        <div class="closeBtn" id="closeCodeDisplayBtn">Close</div>
-                    </div>
-                </div>
+                
 
 
 
